@@ -1,0 +1,1117 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later",  "Have a nice day", "Bye! Come back again soon."]
+        },
+        
+        {"tag": "hours",
+         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+        },
+        {"tag": "mopeds",
+         "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?" ],
+         "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds"]
+        },
+        {"tag": "payments",
+         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+        },
+        {"tag": "opentoday",
+         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+        },
+        {"tag": "rental",
+         "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
+         "responses": ["Are you looking to rent today or later this week?"],
+         "context_set": "rentalday"
+        },
+        {"tag": "today",
+         "patterns": ["today"],
+         "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
+         "context_filter": "rentalday"
+        },
+        {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey"],
+      "responses": ["Hello, how can I assist you today?", "Hi there, what can I do for you?", "Hey, how can I help you?"],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": ["Goodbye, have a nice day!", "See you later!", "Take care!"],
+      "context_set": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thank you", "Thanks a lot", "Appreciate it"],
+      "responses": ["You're welcome!", "No problem!", "Anytime!"],
+      "context_set": ""
+    },
+    {
+      "tag": "weather",
+      "patterns": ["What's the weather like?", "How's the weather?", "Is it going to rain?"],
+      "responses": ["It's sunny and warm today!", "The weather is cloudy with a chance of rain.", "It's supposed to be cold and windy today."],
+      "context_set": ""
+    },
+    {
+      "tag": "jokes",
+      "patterns": ["Tell me a joke", "Do you know any jokes?", "Can you make me laugh?"],
+      "responses": ["Why did the tomato turn red? Because it saw the salad dressing!", "What do you call an alligator in a vest? An investi-gator!", "Why don't scientists trust atoms? Because they make up everything!"],
+      "context_set": ""
+    },
+    {
+      "tag": "restaurant",
+      "patterns": ["Can you recommend a good restaurant?", "What's a good place to eat?", "I'm hungry, where should I go?"],
+      "responses": ["Sure, there's a great Italian place called Il Posto nearby", "You might like the burgers at The Burger Joint down the street", "There's a sushi place called Sushi House that's pretty good"]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["What's the weather like today?", "Do I need an umbrella?", "Is it going to rain?"],
+      "responses": ["It's sunny and warm today", "Looks like it's going to be cloudy with a chance of rain", "You might want to bring an umbrella just in case"]
+    },
+    {
+      "tag": "movie",
+      "patterns": ["What's a good movie to watch?", "Any recommendations for a movie?", "What's playing at the theater?"],
+      "responses": ["You might like the new Marvel movie, it's getting good reviews", "There's a new romantic comedy that just came out, it's supposed to be pretty funny", "The latest action movie is playing at the theater, if you're into that sort of thing"]
+    },
+    {
+      "tag": "sports",
+      "patterns": ["What's your favorite sport?", "Do you play any sports?", "Who's your favorite athlete?"],
+      "responses": ["I'm a chatbot, I don't play sports", "I don't really have a favorite sport, but I enjoy watching basketball", "My favorite athlete is Usain Bolt, he's the fastest man on earth"]
+    },
+    {
+      "tag": "books",
+      "patterns": ["Do you like to read?", "What's your favorite book?", "Have you read any good books lately?"],
+      "responses": ["I don't read books, but I can recommend some if you'd like", "My favorite book is '1984' by George Orwell", "I recently read 'The Girl on the Train' and thought it was pretty good"]
+    },
+    {
+      "tag": "music",
+      "patterns": ["What kind of music do you like?", "Do you play any instruments?", "Who's your favorite musician?"],
+      "responses": ["I don't really have a favorite genre of music, but I like listening to pop music", "I don't play any instruments, I'm just a chatbot", "My favorite musician is Taylor Swift"]
+    },
+    {
+      "tag": "travel",
+      "patterns": ["Have you traveled anywhere recently?", "What's your favorite travel destination?", "Do you like to travel?"],
+      "responses": ["I don't travel, but I can recommend some great destinations if you'd like", "My favorite travel destination is Paris, it's such a beautiful city", "I love traveling and exploring new places"]
+    },
+    {
+      "tag": "pets",
+      "patterns": ["Do you have any pets?", "What's your favorite animal?", "Are you a dog person or a cat person?"],
+      "responses": ["I don't have any pets, I'm just a chatbot", "My favorite animal is a dolphin, they're so intelligent and playful", "I'm more of a dog person, but I like cats too"]
+    },
+    {
+    "tag": "hobbies",
+    "patterns": ["What are your hobbies?", "Do you have any hobbies?", "Tell me about your hobbies."],
+    "responses": ["I love reading books and listening to music. I also enjoy hiking and exploring new places.", "My hobbies include painting, playing guitar, and trying new restaurants.", "In my free time, I like to practice yoga, watch movies, and cook new recipes."],
+    "context_set": ""
+},
+{
+            "tag": "coffee",
+            "patterns": [
+                "Hey, do you want to grab some coffee later?",
+                "What's your favorite coffee shop?",
+                "Have you tried the new latte at that coffee place down the street?"
+            ],
+            "responses": [
+                "Sure, I'd love to!",
+                "My favorite coffee shop is the one on Main Street.",
+                "No, I haven't tried it yet. Is it good?"
+            ]
+        },
+        {
+            "tag": "shoes",
+            "patterns": [
+                "I just bought these new shoes, what do you think?",
+                "Where do you usually buy your shoes?",
+                "Do you prefer sneakers or dress shoes?"
+            ],
+            "responses": [
+                "They look great on you!",
+                "I usually buy my shoes online, but sometimes I go to the mall.",
+                "It depends on the occasion. I like sneakers for casual wear, but I wear dress shoes for work."
+            ]
+        },
+        {
+            "tag": "pizza",
+            "patterns": [
+                "What's your favorite kind of pizza?",
+                "Do you like thin crust or thick crust?",
+                "Have you tried the new pizza place that just opened?"
+            ],
+            "responses": [
+                "My favorite kind of pizza is pepperoni.",
+                "I like both thin and thick crust, it just depends on my mood.",
+                "No, I haven't tried it yet. Is it good?"
+            ]
+        },
+        {
+            "tag": "movies",
+            "patterns": [
+                "Have you seen any good movies lately?",
+                "What's your favorite movie?",
+                "What kind of movies do you like?"
+            ],
+            "responses": [
+                "Yes, I saw the new Marvel movie and it was really good!",
+                "My favorite movie is The Shawshank Redemption.",
+                "I like all kinds of movies, but I especially like action and comedy."
+            ]
+        },
+        {
+            "tag": "books",
+            "patterns": [
+                "Do you like to read?",
+                "What's your favorite book?",
+                "What are you currently reading?"
+            ],
+            "responses": [
+                "Yes, I love to read!",
+                "My favorite book is To Kill a Mockingbird.",
+                "Right now I'm reading a mystery novel."
+            ]
+        },
+        {
+            "tag": "sports",
+            "patterns": [
+                "Did you catch the game last night?",
+                "What's your favorite sport?",
+                "Do you play any sports?"
+            ],
+            "responses": [
+                "Yes, it was a great game!",
+                "My favorite sport is basketball.",
+                "I used to play soccer in high school."
+            ]
+        },
+        {
+            "tag": "pets",
+            "patterns": [
+                "Do you have any pets?",
+                "What kind of pets do you like?",
+                "Have you ever owned a dog or a cat?"
+            ],
+            "responses": [
+                "Yes, I have a dog and a cat.",
+                "I like all kinds of pets, but I especially like dogs.",
+                "Yes, I used to have a dog named Max."
+            ]
+        },
+         {
+            "tag": "music",
+            "patterns": [
+                "Do you like music?",
+                "What kind of music do you listen to?",
+                "Who's your favorite artist?"
+            ],
+            "responses": [
+                "Yes, I love music!",
+                "I listen to all kinds of music, but lately I've been into indie rock.",
+                "I'm really into Billie Eilish right now, how about you?"
+            ]
+        },
+        {
+            "tag": "cooking",
+            "patterns": [
+                "What's your favorite dish?",
+                "Do you like cooking?",
+                "Can you share a recipe?"
+            ],
+            "responses": [
+                "My favorite dish is lasagna, what about you?",
+                "I love cooking, it's so therapeutic.",
+                "Sure, here's my favorite recipe for chicken alfredo: [insert recipe here]."
+            ]
+        },
+        {
+            "tag": "cars",
+            "patterns": [
+                "Do you drive?",
+                "What kind of car do you have?",
+                "Have you ever been in a car accident?"
+            ],
+            "responses": [
+                "Yes, I have a Toyota Camry.",
+                "No, I don't drive. I prefer to take public transportation.",
+                "Unfortunately, I was in a fender bender last year but no one was hurt."
+            ]
+        },
+        {
+            "tag": "fashion",
+            "patterns": [
+                "Where do you like to shop for clothes?",
+                "What's your favorite clothing brand?",
+                "Do you follow fashion trends?"
+            ],
+            "responses": [
+                "I love shopping at Zara and H&M.",
+                "My favorite brand is Nike, I love their athletic wear.",
+                "Not really, I prefer to wear what's comfortable and suits my personal style."
+            ]
+        },
+        {
+            "tag": "gardening",
+            "patterns": [
+                "Do you have a green thumb?",
+                "What kind of plants do you have?",
+                "Have you ever grown your own vegetables?"
+            ],
+            "responses": [
+                "Not really, but I enjoy tending to my indoor plants.",
+                "I have a few succulents and a spider plant.",
+                "Yes, I grew my own tomatoes and herbs last summer and it was so rewarding!"
+            ]
+        },
+        {
+            "tag": "art",
+            "patterns": [
+                "Do you enjoy going to art museums?",
+                "What's your favorite art style?",
+                "Do you like to create art?"
+            ],
+            "responses": [
+                "Yes, I love visiting art museums and galleries.",
+                "My favorite art style is impressionism.",
+                "Yes, I like to paint and draw in my spare time."
+            ]
+        },
+        {
+            "tag": "hiking",
+            "patterns": [
+                "Have you ever gone hiking?",
+                "What's your favorite hiking trail?",
+                "Do you prefer hiking alone or with a group?"
+            ],
+            "responses": [
+                "Yes, I love hiking and being in nature.",
+                "My favorite hiking trail is the one in Yosemite National Park.",
+                "I prefer hiking with a group of friends, it's more fun and safer that way."
+            ]
+        },
+         {
+            "tag": "fitness",
+            "patterns": [
+                "Hey, have you been working out lately?",
+                "I'm thinking of starting a new fitness routine, any suggestions?",
+                "I love going for a run in the morning, how about you?"
+            ],
+            "responses": [
+                "Yeah, I've been hitting the gym pretty regularly.",
+                "I highly recommend trying out yoga, it's a great way to stay fit and destress.",
+                "I'm not much of a runner, but I do enjoy lifting weights."
+            ]
+        },
+        {
+            "tag": "gaming",
+            "patterns": [
+                "What games have you been playing lately?",
+                "Have you tried the new Call of Duty yet?",
+                "I'm so excited for the new Elder Scrolls game!"
+            ],
+            "responses": [
+                "I've been really into Fortnite lately, it's so addicting.",
+                "I haven't had a chance to play the new Call of Duty, how is it?",
+                "Same here, I can't wait to explore the new world in Elder Scrolls."
+            ]
+        },
+        {
+            "tag": "dancing",
+            "patterns": [
+                "Do you like dancing?",
+                "Have you ever taken any dance classes?",
+                "What's your favorite type of dance?"
+            ],
+            "responses": [
+                "I love dancing! I actually take salsa lessons every week.",
+                "Yeah, I took some ballroom dance classes in college and really enjoyed it.",
+                "My favorite type of dance is hip hop, it's so fun and energetic."
+            ]
+        },
+        {
+            "tag": "technology",
+            "patterns": [
+                "Do you like technology?",
+                "What's your favorite gadget?",
+                "Have you tried the latest iPhone?",
+                "Do you use social media often?",
+                "What's your opinion on AI?",
+                "What's the best tech gadget you've ever owned?",
+                "Do you prefer Apple or Android?",
+                "What's your go-to tech blog?",
+                "Do you think robots will take over the world?",
+                "What's your favorite productivity app?"
+            ],
+            "responses": [
+                "I love technology! I can't imagine living without it.",
+                "My favorite gadget is my iPhone.",
+                "I haven't tried the latest iPhone yet, but I'm planning to.",
+                "Yes, I use social media all the time.",
+                "I think AI has a lot of potential, but it needs to be used responsibly.",
+                "The best tech gadget I've ever owned is my smartwatch.",
+                "I'm an Apple fan all the way!",
+                "My go-to tech blog is TechCrunch.",
+                "I don't think robots will take over the world, but I do think they'll become more prevalent in our daily lives.",
+                "My favorite productivity app is Todoist."
+            ]
+        },
+        {
+            "tag": "beauty",
+            "patterns": [
+                "What's your favorite makeup brand?",
+                "Do you prefer a natural or dramatic look?",
+                "What's your go-to skincare routine?",
+                "Do you like wearing perfume?",
+                "What's your favorite lipstick shade?",
+                "Do you use a lot of different beauty products?",
+                "What's your favorite nail polish color?",
+                "Do you have any beauty tips to share?",
+                "What's your favorite hair styling tool?",
+                "Do you prefer a matte or dewy finish?"
+            ],
+            "responses": [
+                "I love MAC cosmetics!",
+                "I prefer a natural look, but I like to glam it up for special occasions.",
+                "My go-to skincare routine involves a lot of moisturizing.",
+                "Yes, I love wearing perfume.",
+                "My favorite lipstick shade is a bright red.",
+                "I use a ton of different beauty products.",
+                "I love a classic red nail polish.",
+                "My beauty tip is to always wear sunscreen!",
+                "My favorite hair styling tool is a curling iron.",
+                "I prefer a dewy finish for my makeup."
+            ]
+        },
+        {
+            "tag": "wine",
+            "patterns": [
+                "What's your favorite type of wine?",
+                "Do you prefer red or white wine?",
+                "Have you ever tried a Malbec?",
+                "What wine would you pair with this meal?"
+            ],
+            "responses": [
+                "I'm more of a red wine person myself.",
+                "I don't really know much about wine, but I like Pinot Grigio.",
+                "I've heard that Malbec is really good, but I've never tried it.",
+                "Hmm, I'm not sure. Maybe a Cabernet Sauvignon?"
+            ]
+        },
+        {
+            "tag": "beer",
+            "patterns": [
+                "What's your favorite type of beer?",
+                "Do you like IPAs?",
+                "What beer would you recommend?",
+                "Have you ever tried a sour beer?"
+            ],
+            "responses": [
+                "I like a good wheat beer or a stout.",
+                "I'm not a big fan of IPAs, they're too bitter for me.",
+                "It depends on what you like. If you like light beers, I'd recommend a lager. If you like dark beers, try a porter.",
+                "No, I've never tried a sour beer before. What's it like?"
+            ]
+        },
+        {
+            "tag": "cocktails",
+            "patterns": [
+                "What's your favorite cocktail?",
+                "Do you prefer sweet or sour cocktails?",
+                "Have you ever tried a Mai Tai?",
+                "What cocktail would you recommend?"
+            ],
+            "responses": [
+                "I love a good margarita.",
+                "I like sweet cocktails, like a piña colada or a strawberry daiquiri.",
+                "Yes, I've had a Mai Tai before. It was pretty good!",
+                "If you like whiskey, try an Old Fashioned. If you like fruity cocktails, try a Sex on the Beach."
+            ]
+        },
+        {
+            "tag": "language",
+            "patterns": [
+                "Do you speak any other languages?",
+                "What language would you like to learn?",
+                "Have you ever been to a foreign country?",
+                "How did you learn to speak English?"
+            ],
+            "responses": [
+                "I can speak a little bit of Spanish.",
+                "I'd love to learn French. It's such a beautiful language.",
+                "Yes, I've been to Mexico a few times.",
+                "I learned English in school and by watching TV shows and movies in English."
+            ]
+        },
+        {
+            "tag": "shopping",
+            "patterns": [
+                "Do you like shopping?",
+                "What's your favorite store?",
+                "Have you ever gone shopping online?",
+                "Do you prefer shopping alone or with friends?"
+            ],
+            "responses": [
+                "Yes, I love shopping!",
+                "I really like shopping at Target. They have everything!",
+                "Yes, I shop online all the time. It's so convenient.",
+                "It depends on what I'm shopping for. If I'm buying clothes, I like to go with friends so they can give me their opinion."
+            ]
+        },
+{
+            "tag": "meditation",
+            "patterns": [
+                "Hey, have you ever tried meditation?",
+                "I've been thinking about trying meditation, have you done it before?",
+                "Do you meditate regularly?",
+                "I've heard meditation can be really helpful for reducing stress and anxiety"
+            ],
+            "responses": [
+                "Yes, I meditate every morning! It's a great way to start the day",
+                "I started meditating a few months ago and it's made a huge difference in my life",
+                "Meditation has been shown to have a lot of benefits, including reducing stress and anxiety, improving focus and concentration, and even boosting the immune system",
+                "If you're interested in trying meditation, there are a lot of great apps and resources out there to help you get started. Let me know if you want some recommendations!"
+            ]
+        },{
+      "tag": "astrology",
+      "patterns": [
+        "Do you believe in astrology?",
+        "What's your zodiac sign?",
+        "Do you read your horoscope?",
+        "Have you ever had your birth chart done?",
+        "What's your opinion on astrology?"
+      ],
+      "responses": [
+        "I'm not really sure about astrology, what do you think?",
+        "I'm a Sagittarius, how about you?",
+        "I read my horoscope sometimes, but I don't take it too seriously",
+        "No, I haven't had my birth chart done before",
+        "I think astrology is interesting, but I'm not sure how much I believe in it"
+      ]
+    },
+    {
+      "tag": "photography",
+      "patterns": [
+        "Do you like taking photos?",
+        "What kind of camera do you use?",
+        "Do you prefer film or digital photography?",
+        "What's your favorite thing to photograph?",
+        "Have you ever taken a photography class?"
+      ],
+      "responses": [
+        "Yes, I love taking photos! It's one of my favorite hobbies",
+        "I use a Canon EOS R, what about you?",
+        "I prefer film photography because it has a unique look, but digital is more convenient",
+        "I love taking photos of landscapes and nature",
+        "Yes, I took a photography class in college and learned a lot"
+      ]
+    },
+    {
+      "tag": "architecture",
+      "patterns": [
+        "What's your favorite style of architecture?",
+        "Have you ever been to any famous buildings?",
+        "What's your favorite building in your city?",
+        "Do you think architecture can change society?",
+        "Have you ever designed a building?"
+      ],
+      "responses": [
+        "I love Art Deco architecture, what about you?",
+        "Yes, I've been to the Empire State Building and it was amazing",
+        "My favorite building in my city is the public library, it's so beautiful",
+        "Yes, I think architecture can have a huge impact on society and how people interact with each other",
+        "No, I haven't designed a building but it would be a dream come true"
+      ]
+    },
+    {
+      "tag": "history",
+      "patterns": [
+        "What's your favorite time period in history?",
+        "Have you ever been to a historical landmark?",
+        "What's the most interesting history book you've read?",
+        "Do you think history repeats itself?",
+        "What do you think is the most important event in history?"
+      ],
+      "responses": [
+        "I'm fascinated by the medieval period, how about you?",
+        "Yes, I've been to the Colosseum in Rome and it was incredible",
+        "I really enjoyed 'A People's History of the United States'",
+        "Yes, I think history repeats itself because human nature doesn't change",
+        "That's a tough question, but I think the invention of the printing press was a huge turning point in history"
+      ]
+    },
+{
+      "tag": "philosophy",
+      "patterns": [
+        "What's the meaning of life?",
+        "Do you believe in free will?",
+        "What is truth?",
+        "Why do bad things happen to good people?",
+        "What is the nature of reality?"
+      ],
+      "responses": [
+        "That's a deep question...",
+        "Hmm, let me think about that...",
+        "I'm not sure, what do you think?",
+        "There are many different answers to that question.",
+        "That's a question that philosophers have been asking for centuries."
+      ]
+    },
+    {
+      "tag": "psychology",
+      "patterns": [
+        "How do I deal with anxiety?",
+        "Why am I always so stressed out?",
+        "What is the best way to deal with anger?",
+        "How do I improve my self-esteem?",
+        "What are some good coping strategies?"
+      ],
+      "responses": [
+        "Have you tried talking to a therapist about this?",
+        "It's important to take care of your mental health.",
+        "There are many different strategies you can use to cope with stress and anxiety.",
+        "It's important to practice self-care and self-compassion.",
+        "Remember that it's okay to ask for help when you need it."
+      ]
+    },
+    {
+      "tag": "food",
+      "patterns": [
+        "What's your favorite type of cuisine?",
+        "Have you tried any good restaurants lately?",
+        "What's the best thing you've ever eaten?",
+        "Do you like to cook?",
+        "What's your favorite comfort food?"
+      ],
+      "responses": [
+        "I love Italian food, especially pizza and pasta.",
+        "I recently tried a new sushi restaurant and it was amazing.",
+        "I had the most delicious steak at a fancy restaurant last week.",
+        "I enjoy cooking and trying new recipes.",
+        "When I'm feeling down, I always crave mac and cheese."
+      ]
+    },
+{
+      "tag": "health",
+      "patterns": [
+        "Hey, how have you been feeling lately?",
+        "Have you been taking care of yourself?",
+        "Do you have any health goals you're working towards?",
+        "Have you tried any new healthy recipes lately?"
+      ],
+      "responses": [
+        "I've been doing pretty well, thanks for asking. How about you?",
+        "I try to take care of myself as best I can. Sometimes it's tough though.",
+        "Yeah, I'm trying to lose some weight and eat more vegetables.",
+        "Not really, but I'd love to hear if you have any recommendations!"
+      ]
+    },
+    {
+      "tag": "nature",
+      "patterns": [
+        "Have you been spending much time outdoors lately?",
+        "Do you have a favorite park or hiking trail?",
+        "What do you like to do outside?",
+        "Have you seen any cool wildlife recently?"
+      ],
+      "responses": [
+        "I've been trying to get outside more often. It's great for my mental health.",
+        "Yeah, I love hiking in the nearby state park. The views are amazing.",
+        "I enjoy running and playing basketball outside. How about you?",
+        "I saw a family of deer the other day while I was out walking. It was really cool."
+      ]
+    },
+    {
+      "tag": "environment",
+      "patterns": [
+        "What do you do to reduce your environmental impact?",
+        "Do you think climate change is a real problem?",
+        "Have you heard of any interesting sustainable products or practices?",
+        "What do you think about electric cars?"
+      ],
+      "responses": [
+        "I try to recycle as much as I can and avoid single-use plastics.",
+        "Absolutely, climate change is a serious issue and we all need to do our part.",
+        "I've been reading about reusable beeswax food wraps. They seem like a great alternative to plastic wrap.",
+        "I think they're a great idea, but they're still pretty expensive for most people."
+      ]
+    },
+    {
+      "tag": "education",
+      "patterns": [
+        "How has your online learning experience been so far?",
+        "Do you prefer traditional classroom learning or online learning?",
+        "What's your favorite subject to study?",
+        "Have you learned any interesting facts or concepts recently?"
+      ],
+      "responses": [
+        "It's been a bit of a struggle adjusting to online learning, but I'm getting used to it.",
+        "I think it depends on the subject. Some things are better learned in a classroom setting.",
+        "I really enjoy studying history. It's fascinating to learn about different cultures and events from the past.",
+        "I just read about how the human brain has the ability to grow new neurons throughout our entire lives. It's amazing!"
+      ]
+    },
+{
+            "tag": "politics",
+            "patterns": [
+                "What do you think about the upcoming election?",
+                "Have you been following the news lately?",
+                "Do you have any political opinions?"
+            ],
+            "responses": [
+                "To be honest, I'm not really interested in politics.",
+                "I think it's important to stay informed about what's going on in the world, but I don't like to get too caught up in it.",
+                "I try to stay neutral when it comes to politics, but it's hard not to have an opinion these days."
+            ]
+        },
+        {
+            "tag": "religion",
+            "patterns": [
+                "Do you believe in God?",
+                "What's your opinion on religion?",
+                "Are you religious?",
+                "What religion are you?"
+            ],
+            "responses": [
+                "I prefer not to discuss religion.",
+                "It's a personal topic for me, can we talk about something else?",
+                "I believe everyone has the right to their own religious beliefs.",
+                "I'm an AI language model, I don't have a religion."
+            ]
+        },
+        {
+            "tag": "spirituality",
+            "patterns": [
+                "Do you meditate?",
+                "Have you ever had a spiritual experience?",
+                "What's your opinion on spirituality?",
+                "Do you believe in the afterlife?"
+            ],
+            "responses": [
+                "I don't meditate, but I know some people find it helpful.",
+                "As an AI language model, I haven't had a spiritual experience, but I'm interested to hear about yours.",
+                "I think spirituality can mean different things to different people.",
+                "As an AI language model, I don't have beliefs about the afterlife."
+            ]
+        },
+        {
+            "tag": "finance",
+            "patterns": [
+                "Do you invest in stocks?",
+                "What's your opinion on cryptocurrency?",
+                "Do you have a budget?",
+                "How do you save money?"
+            ],
+            "responses": [
+                "I don't personally invest in stocks or cryptocurrency, but I know many people find it interesting.",
+                "Cryptocurrency is a hot topic these days, but there are many different opinions on it.",
+                "I try to keep a budget, it helps me stay organized.",
+                "I save money by setting goals and being mindful of my spending."
+            ]
+        },
+        {
+            "tag": "entrepreneurship",
+            "patterns": [
+                "Do you have your own business?",
+                "What's your opinion on entrepreneurship?",
+                "How do you come up with business ideas?",
+                "What's your biggest challenge as an entrepreneur?"
+            ],
+            "responses": [
+                "I'm not a person, so I don't have a business.",
+                "Entrepreneurship is an exciting field with many opportunities.",
+                "I brainstorm ideas by researching and talking to people.",
+                "As an AI language model, I don't face the same challenges as human entrepreneurs."
+            ]
+        },
+        {
+            "tag": "marketing",
+            "patterns": [
+                "What's your favorite marketing campaign?",
+                "Do you think social media is an effective marketing tool?",
+                "How do you measure the success of a marketing campaign?",
+                "What's your opinion on influencer marketing?"
+            ],
+            "responses": [
+                "I don't have preferences, as I'm an AI language model.",
+                "Social media can be a powerful tool for reaching audiences, but it's not the only one.",
+                "Measuring success depends on the goals of the campaign and the metrics used to evaluate it.",
+                "Influencer marketing can be effective, but it's important to choose influencers who align with the brand's values."
+            ]
+        },
+{
+            "tag": "sales",
+            "patterns": ["Do you have any sales going on?", "Can you tell me about your current promotions?", "What discounts do you offer?"],
+            "responses": ["Yes, we have some great deals going on right now!", "Absolutely! Let me tell you about our current promotions.", "We offer discounts on select items. Would you like me to tell you more?"],
+            "context_set": ""
+        },
+        {
+            "tag": "leadership",
+            "patterns": ["What qualities do you think a good leader should have?", "How do you motivate your team?", "What's your leadership style?"],
+            "responses": ["I think a good leader should be a good listener and communicator.", "I motivate my team by setting clear goals and recognizing their achievements.", "My leadership style is to lead by example and empower my team members to take ownership of their work."],
+            "context_set": ""
+        },
+        {
+            "tag": "management",
+            "patterns": ["What's your approach to managing projects?", "How do you handle conflicts with team members?", "What's the biggest challenge you've faced as a manager?"],
+            "responses": ["My approach to managing projects is to set clear goals and expectations, and communicate with my team regularly.", "I try to address conflicts with team members directly and respectfully.", "The biggest challenge I've faced as a manager is balancing competing priorities and limited resources."],
+            "context_set": ""
+        },
+        {
+            "tag": "teamwork",
+            "patterns": [
+                "Hey, how was your team project coming along?",
+                "Have you had any success with teamwork lately?"
+            ],
+            "responses": [
+                "Oh, it's going well! We've been collaborating really effectively and getting a lot done.",
+                "Definitely! Our team has been working together really cohesively and I think it's paying off."
+            ]
+        },
+        {
+            "tag": "communication",
+            "patterns": [
+                "How do you handle difficult conversations with coworkers?",
+                "Do you have any tips for improving communication in the workplace?"
+            ],
+            "responses": [
+                "Honestly, I try to approach every conversation with an open mind and an empathetic attitude. It helps to really listen to the other person's perspective.",
+                "One thing that's worked well for me is scheduling regular check-ins with my coworkers. It helps us stay on the same page and address issues early on."
+            ]
+        },
+        {
+            "tag": "customer service",
+            "patterns": [
+                "Have you ever had to deal with a difficult customer?",
+                "How do you handle angry customers?"
+            ],
+            "responses": [
+                "Yeah, it can be tough! I try to remain calm and empathetic, and offer solutions that can address their concerns.",
+                "It's definitely not easy, but I find that really listening to their complaints and offering concrete solutions can help diffuse the situation."
+            ]
+        },
+        {
+            "tag": "social media",
+            "patterns": [
+                "How do you manage your social media presence?",
+                "Do you have any tips for building a following on social media?"
+            ],
+            "responses": [
+                "I try to post regularly and engage with my followers by responding to comments and messages. It takes time, but it's worth it.",
+                "Consistency is key! I've found that posting consistently and using hashtags can help attract new followers."
+            ]
+        },
+        {
+            "tag": "innovation",
+            "patterns": [
+                "Have you heard about any interesting new technologies or ideas lately?",
+                "What do you think are some of the biggest trends in innovation right now?"
+            ],
+            "responses": [
+                "Definitely! There are so many exciting things happening in the tech world right now, it's hard to keep up.",
+                "I think there's a lot of potential in the fields of AI and machine learning, and we're just scratching the surface."
+            ]
+        },
+        {
+            "tag": "creativity",
+            "patterns": [
+                "How do you keep your creativity flowing?",
+                "What are some of your favorite ways to get inspired?"
+            ],
+            "responses": [
+                "I try to expose myself to new ideas and perspectives as much as possible, whether it's through reading, art, or travel.",
+                "I find that taking breaks and doing something completely unrelated to work can help me come up with new ideas when I return."
+            ]
+        },
+ {
+            "tag": "productivity",
+            "patterns": [
+                "Hey, how do you stay productive?",
+                "Do you have any tips for staying focused?",
+                "How do you avoid procrastination?"
+            ],
+            "responses": [
+                "I like to use the Pomodoro technique to stay productive. Have you heard of it?",
+                "To stay focused, I break up my tasks into smaller, more manageable ones. It helps me feel less overwhelmed.",
+                "When I'm feeling unmotivated, I like to listen to music or take a quick walk to clear my head."
+            ]
+        },
+        {
+            "tag": "time management",
+            "patterns": [
+                "How do you manage your time effectively?",
+                "What's your approach to prioritizing tasks?",
+                "Do you use any tools to manage your time?"
+            ],
+            "responses": [
+                "I like to use a planner to keep track of my tasks and deadlines.",
+                "To prioritize tasks, I use the Eisenhower Matrix. It helps me identify what's important and what's urgent.",
+                "I use a time-tracking app to help me stay on track and make sure I'm using my time effectively."
+            ]
+        },
+        {
+            "tag": "self-improvement",
+            "patterns": [
+                "What do you do to work on yourself?",
+                "How do you stay motivated to improve?",
+                "What's your favorite self-help book?"
+            ],
+            "responses": [
+                "I like to set personal goals for myself and track my progress.",
+                "To stay motivated, I remind myself why I started and how far I've come.",
+                "My favorite self-help book is The 7 Habits of Highly Effective People by Stephen Covey. Have you read it?"
+            ]
+        },
+        {
+            "tag": "motivation",
+            "patterns": [
+                "How do you stay motivated?",
+                "What's your secret to staying driven?",
+                "What do you do when you're feeling demotivated?"
+            ],
+            "responses": [
+                "I remind myself why I started and visualize my end goal.",
+                "To stay driven, I break up my goals into smaller, more achievable ones. It helps me see progress and stay motivated.",
+                "When I'm feeling demotivated, I like to take a break and do something that makes me happy, like going for a walk or reading a book."
+            ]
+        },
+        {
+            "tag": "goal-setting",
+            "patterns": [
+                "How do you set goals for yourself?",
+                "Do you have any tips for setting achievable goals?",
+                "How do you measure progress towards your goals?"
+            ],
+            "responses": [
+                "I like to set SMART goals: specific, measurable, achievable, relevant, and time-bound.",
+                "To set achievable goals, I make sure they're realistic and I break them down into smaller, more manageable ones.",
+                "To measure progress towards my goals, I track my progress and celebrate small wins along the way."
+            ]
+        },
+{
+            "tag": "ai",
+            "patterns": [
+                "Hey, have you heard about AI?",
+                "Do you know anything about artificial intelligence?",
+                "What's your opinion on AI?",
+                "Have you seen any cool AI demos recently?",
+                "Do you think AI will take over the world?"
+            ],
+            "responses": [
+                "Yeah, I've been following developments in AI for a while now.",
+                "I'm familiar with the basics, but I'm not an expert.",
+                "I think AI has a lot of potential to improve our lives, but we need to be careful about its impact on society.",
+                "There are some really impressive AI demos out there. Have you seen OpenAI's GPT-3?",
+                "I don't think AI will take over the world, but we need to be mindful of the ethical considerations around its development."
+            ]
+        },
+        {
+            "tag": "data_science",
+            "patterns": [
+                "What do you think of data science?",
+                "Do you have any experience with data science?",
+                "What are some of the biggest challenges in data science?",
+                "What are some cool data science applications you've seen?",
+                "Do you think data science is overhyped?"
+            ],
+            "responses": [
+                "I think data science is a fascinating field with a lot of potential.",
+                "I've dabbled in data science a bit, but I wouldn't call myself an expert.",
+                "One of the biggest challenges in data science is dealing with messy, unstructured data.",
+                "I've seen some really cool data science applications, like image recognition and fraud detection.",
+                "I don't think data science is overhyped. It's a valuable tool for extracting insights from data."
+            ]
+        },
+        {
+            "tag": "cyber_security",
+            "patterns": [
+                "How concerned are you about cyber security?",
+                "Have you ever been a victim of a cyber attack?",
+                "What do you think are the biggest cyber security threats?",
+                "How can we improve cyber security?",
+                "Do you think cyber security will ever be foolproof?"
+            ],
+            "responses": [
+                "I'm pretty concerned about cyber security. It's a major issue in today's world.",
+                "Fortunately, I haven't been a victim of a cyber attack (knock on wood).",
+                "Some of the biggest cyber security threats are phishing, malware, and ransomware attacks.",
+                "There are a lot of ways we can improve cyber security, such as using strong passwords, keeping software up-to-date, and implementing multi-factor authentication.",
+                "I don't think cyber security will ever be foolproof, but we can definitely make it harder for attackers to succeed."
+            ]
+        },{
+            "tag": "computer_science",
+            "patterns": [
+                "What do you think of computer science?",
+                "Have you taken any computer science courses?",
+                "Do you know any programming languages?",
+                "What's your favorite part of computer science?"
+            ],
+            "responses": [
+                "I think computer science is fascinating! There are so many different topics to explore.",
+                "Yeah, I've taken a few computer science courses. They can be challenging but also really rewarding.",
+                "I know a bit of Python and Java, but I'm still learning.",
+                "I love algorithms and data structures. They're like puzzles you get to solve!"
+            ]
+        },
+        {
+            "tag": "learning_cs",
+            "patterns": [
+                "How did you learn computer science?",
+                "What resources do you recommend for learning CS?",
+                "Do you have any study tips for CS classes?"
+            ],
+            "responses": [
+                "I mostly learned by taking classes and working on projects, but there are also lots of great online resources like Codecademy and Coursera.",
+                "For beginners, I recommend starting with a language like Python and working through some tutorials or coding challenges. Practice is key!",
+                "Make sure to start assignments early and don't be afraid to ask for help from professors or classmates."
+            ]
+        },
+        {
+            "tag": "cs_jobs",
+            "patterns": [
+                "What kind of jobs can you get with a computer science degree?",
+                "Are there any specific industries that need CS professionals?",
+                "What are the career prospects like for CS majors?"
+            ],
+            "responses": [
+                "There are so many different career paths you can take with a CS degree! Some popular ones include software development, data analysis, cybersecurity, and artificial intelligence.",
+                "Tech companies obviously need lots of CS professionals, but other industries like finance, healthcare, and entertainment are also hiring more and more CS experts.",
+                "The job outlook for CS majors is generally very positive. There's a high demand for skilled programmers and analysts, and salaries can be quite competitive."
+            ]
+        },
+        {
+            "tag": "cs_community",
+            "patterns": [
+                "Do you know of any computer science clubs or groups?",
+                "Are there any CS-related events coming up?",
+                "What are some ways to get involved in the CS community?"
+            ],
+            "responses": [
+                "There are usually lots of student groups and clubs related to CS on college campuses. Check with your school's department or student activities office.",
+                "There might be hackathons or coding competitions coming up in your area. You can also look for conferences or meetups for CS professionals.",
+                "One great way to get involved in the community is to contribute to open-source projects on GitHub or other platforms. You can also start your own coding projects and collaborate with others."
+            ]
+        },{
+      "tag": "success",
+      "patterns": [
+        "Hey, how's work going?",
+        "Did you get that promotion you were after?",
+        "You seem to be doing really well these days",
+        "How do you define success?"
+      ],
+      "responses": [
+        "Yeah, work's been going pretty good. I'm putting in a lot of hours but it's paying off.",
+        "I did! I got the promotion I was after. Finally some recognition for all my hard work.",
+        "Thanks! Yeah, things are looking up lately. Just trying to stay focused and keep pushing forward.",
+        "Success to me is feeling fulfilled in what I do and being able to support myself and those I care about."
+      ]
+    },
+    {
+      "tag": "happiness",
+      "patterns": [
+        "You seem really happy lately",
+        "What's making you so happy?",
+        "How do you maintain your happiness?",
+        "Do you believe happiness is a choice?"
+      ],
+      "responses": [
+        "I am! Life's been good to me lately and I'm grateful for it.",
+        "Honestly, it's just the little things. Spending time with loved ones, taking care of myself, pursuing my hobbies.",
+        "I try to make time for the things that make me happy and let go of things that don't serve me.",
+        "I do. I think we can't control everything that happens to us, but we can control how we react and choose to focus on the positive."
+      ]
+    },
+    {
+      "tag": "relationships",
+      "patterns": [
+        "How's your relationship going?",
+        "What's the most important thing in a relationship?",
+        "Do you believe in soulmates?",
+        "What's the biggest challenge you've faced in a relationship?"
+      ],
+      "responses": [
+        "It's going well, thanks for asking. We have our ups and downs like any couple, but we love and support each other.",
+        "Trust and communication are key for me. Without those, it's hard to build a strong relationship.",
+        "I do! I believe there are people who come into our lives and we just feel an instant connection to them.",
+        "The biggest challenge for me has been learning to compromise and communicate effectively. It's not always easy, but it's worth it."
+      ]
+    },
+    {
+      "tag": "family",
+      "patterns": [
+        "How's your family doing?",
+        "Do you have any siblings?",
+        "What's the best thing about your family?",
+        "How do you stay close with your family?"
+      ],
+      "responses": [
+        "They're doing well, thanks for asking. We try to stay in touch and support each other as best we can.",
+        "Yeah, I have a younger sister. We fought a lot growing up but now we're really close.",
+        "I love that we can always count on each other, no matter what. And we have a lot of fun together.",
+        "We try to make time for each other, even if it's just a quick phone call or text. And we make an effort to do things together, like family dinners or vacations."
+      ]
+    },{
+            "tag": "parenting",
+            "patterns": [
+                "How do you deal with your kids misbehaving?",
+                "What's the best way to discipline a child?",
+                "How do you get your child to sleep through the night?",
+                "What's the best way to potty train a toddler?"
+            ],
+            "responses": [
+                "I usually try to stay calm and talk to my child about why their behavior is not acceptable.",
+                "I think it's important to be consistent with your discipline and make sure your child understands the consequences of their actions.",
+                "There are a few different methods that can work for getting your child to sleep through the night, but it really depends on your child and their temperament.",
+                "Potty training can be a bit challenging, but I found that using positive reinforcement and making it a fun experience for my child really helped."
+            ]
+        },
+        {
+            "tag": "love",
+            "patterns": [
+                "How did you meet your significant other?",
+                "What's the best way to show someone you love them?",
+                "What do you think makes a relationship work?",
+                "What's the most romantic thing someone has ever done for you?"
+            ],
+            "responses": [
+                "We actually met through a mutual friend at a party.",
+                "I think it's important to show your partner that you appreciate them and support them in their goals and dreams.",
+                "Communication, trust, and mutual respect are all key ingredients to a successful relationship.",
+                "My partner once surprised me with a weekend getaway to a cozy cabin in the woods. It was really romantic and thoughtful."
+            ]
+        },
+        {
+            "tag": "dating",
+            "patterns": [
+                "What's the best way to ask someone out?",
+                "How do you know if someone is interested in you?",
+                "What are some good first date ideas?",
+                "What's the best way to break up with someone?"
+            ],
+            "responses": [
+                "I think it's always best to be straightforward and honest when asking someone out.",
+                "If someone is interested in you, they'll usually make an effort to spend time with you and get to know you better.",
+                "Going for a walk in a park, grabbing coffee or drinks, or trying out a new restaurant are all great first date ideas.",
+                "Breaking up is never easy, but it's important to be respectful and honest with the other person about your feelings."
+            ]
+        },
+        {
+            "tag": "marriage",
+            "patterns": [
+                "What's the secret to a happy marriage?",
+                "How do you handle conflicts in a marriage?",
+                "What's the best way to show your spouse you appreciate them?",
+                "How do you keep the romance alive in a long-term relationship?"
+            ],
+            "responses": [
+                "Communication, compromise, and a willingness to work through challenges together are all important for a happy marriage.",
+                "Conflicts are inevitable in any relationship, but it's important to listen to your partner's perspective and work together to find a solution that works for both of you.",
+                "Small gestures like cooking their favorite meal or leaving them a note can go a long way in showing your spouse you appreciate them.",
+                "Trying new things together, surprising each other with little gifts or thoughtful gestures, and making time for date nights are all great ways to keep the romance alive."
+            ]
+        }
+   ]
+}
